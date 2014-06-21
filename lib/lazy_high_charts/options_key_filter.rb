@@ -15,7 +15,7 @@ module LazyHighCharts
 
     def self.date_to_js_code date
       date = date.to_time
-      "Date.UTC(#{date.year}, #{date.month - 1}, #{date.day}, #{date.hour}, #{date.minute})".js_code
+      "Date.UTC(#{date.year}, #{date.month - 1}, #{date.day}, #{date.hour}, #{date.min})".js_code
     end
 
     def self.filter options
